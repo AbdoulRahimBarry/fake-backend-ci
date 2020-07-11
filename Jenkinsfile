@@ -10,6 +10,12 @@ pipeline {
                 sh 'csslint  \${WORKSPACE}/battleboat/css/styles.css'
             }
         }
+        stage('Check bash syntax') {
+            agent { docker { image 'koalaman/shellcheck-alpine:stable' } }
+            steps {
+                script { bashCheck }
+            }
+        }
     }
     post {
     always {
