@@ -1,3 +1,3 @@
-# fake-backend-ci from deve
+# fake-backend-ci from dev
 
 [![Build Status](http://54.174.120.12/buildStatus/icon?job=fake-backend-ci)](http://54.174.120.12/job/fake-backend-ci/)
